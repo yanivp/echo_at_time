@@ -1,0 +1,19 @@
+{
+  "name": "printer-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yaniv Peer",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "redis": "^2.8.0",
+    "redis-eval": "^0.2.2"
+  },
+  "start": "nodemon server.js"
+}

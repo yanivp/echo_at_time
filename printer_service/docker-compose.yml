@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  printer:
+    build: .
+    volumes:
+      - .:/usr/src/app/
+      - /usr/src/app/node_modules
+    networks:
+      - demo_network
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - BROKER_POLLING_INTERVALS_MS=1000
+
+networks:
+  demo_network:
+    driver: bridge
